@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  ubuntu:
+    image: haxagon/workstation
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  debian:
+    image: haxagon/workstation:debian
+    build:
+      context: .
+      dockerfile: Dockerfile.debian
