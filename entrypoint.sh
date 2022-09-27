@@ -41,7 +41,7 @@ if [ "${ENTRYPOINT_SCENARIO_IS_READY}" == "true" ]; then
 fi
 
 if [ "$WEB_SHELL" == "true" ]; then
-	ttyd bash
+	ttyd -u 1000 bash
 fi
 
 bash
