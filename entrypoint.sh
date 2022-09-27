@@ -40,5 +40,9 @@ if [ "${ENTRYPOINT_SCENARIO_IS_READY}" == "true" ]; then
     echo SCENARIO_IS_READY
 fi
 
+if [ "$WEB_SHELL" == "true" ]; then
+	ttyd bash
+fi
+
 bash
 sleep infinity
