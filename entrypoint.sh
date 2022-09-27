@@ -41,7 +41,7 @@ if [ "${ENTRYPOINT_SCENARIO_IS_READY}" == "true" ]; then
 fi
 
 if [ "$WEB_SHELL" == "true" ]; then
-	ttyd -u 1000 bash
+	su -c "/usr/bin/ttyd sh -c \"cd;$DEFAULT_SHELL\"" $USER
 fi
 
 bash
