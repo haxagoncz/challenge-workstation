@@ -13,7 +13,8 @@ Jde o jednoduchý server, který je možné jednoduše konfigurovat za pomocí e
 | PASSWORD | password | Heslo jméno pro vzdálený přístup
 | SHELL | /bin/bash | Výchozí shell uživatele
 | SUDO | false | Přidá uživatele do skupiny sudo
-| WEB_SHELL | false | Spuštění webové konzole na portu 7681
+| WEB_SHELL | false | Spuštění webové konzole
+| WEB_SHELL_PORT | 80 | TCP port pro webovou konzoli
 | **Entrypoint** | | |
 | ENTRYPOINT_PATH | /tmp/entrypoint.sh | Cesta ke scriptu, který se spustí při startu kontejneru (musí být spustitelný, nesmí být `/var/lib/entrypoint.sh`)
 | ENTRYPOINT_REMOVE | true | Odstranění scriptu po ukončení

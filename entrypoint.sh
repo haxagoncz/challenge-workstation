@@ -41,7 +41,7 @@ if [ "${ENTRYPOINT_SCENARIO_IS_READY}" == "true" ]; then
 fi
 
 if [ "$WEB_SHELL" == "true" ]; then
-	su -c "/usr/bin/ttyd sh -c \"cd;$DEFAULT_SHELL\"" $USER
+	su -c "/usr/bin/ttyd -p ${WEB_SHELL_PORT:-80} $DEFAULT_SHELL" - $USER
 fi
 
 bash
