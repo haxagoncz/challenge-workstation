@@ -18,4 +18,4 @@ Jde o jednoduchý server, který je možné jednoduše konfigurovat za pomocí e
 | ENTRYPOINT_REMOVE | true | Odstranění scriptu po ukončení
 | ENTRYPOINT_DEBUG | true | Zapnutí bash debug modu pro entrypoint
 | ENTRYPOINT_SCENARIO_IS_READY | true | Vypsání `SCENARIO_IS_READY` na konci entrypointu
-
+| WEB_SHELL | false | Spuštění webové konzole na portu 7681
