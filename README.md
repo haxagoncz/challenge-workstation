@@ -8,7 +8,7 @@ Jde o jednoduchý server, který je možné jednoduše konfigurovat za pomocí e
 | ENVIRONMENT  | default |Popis |
 | - | - | - |
 | **Vzdálený přístup** | | |
-| ENABLE_SSH | true | Spuštění SSH serveru po startu
+| ENABLE_SSH | false | Spuštění SSH serveru po startu
 | USERNAME | student | Uživatelské jméno pro vzdálený přístup
 | PASSWORD | password | Heslo jméno pro vzdálený přístup
 | SHELL | /bin/bash | Výchozí shell uživatele
