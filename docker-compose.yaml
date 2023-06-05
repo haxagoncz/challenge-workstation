@@ -6,9 +6,3 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-
-  debian:
-    image: haxagon/workstation:debian
-    build:
-      context: .
-      dockerfile: Dockerfile.debian
