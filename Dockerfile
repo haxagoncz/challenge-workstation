@@ -22,7 +22,7 @@ FROM ubuntu:jammy
 
 RUN apt-get update
 RUN apt-get install -y \
-    openssh-server sudo iproute2 libwebsockets-dev libpam0g-dev tini iputils-ping netcat
+    openssh-server sudo iproute2 libwebsockets-dev libpam0g-dev tini iputils-ping netcat file
 COPY ./entrypoint.sh /var/lib/entrypoint.sh
 
 COPY --from=ttyd-builder /ttyd/build/ttyd /usr/bin/ttyd
