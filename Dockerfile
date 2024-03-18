@@ -14,7 +14,7 @@ FROM ubuntu:jammy as ttyd-builder
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
-RUN apt-get install -y build-essential cmake git libjson-c-dev libwebsockets-dev autoconf automake curl libtool make
+RUN apt-get install -y build-essential cmake git libjson-c-dev libwebsockets-dev autoconf automake curl libtool make man ascii
 RUN git clone https://github.com/tsl0922/ttyd.git
 RUN cd /ttyd && env BUILD_TARGET=x86_64 ./scripts/cross-build.sh
 
